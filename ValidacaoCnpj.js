@@ -76,7 +76,7 @@ function verificaCnpj() {
     calc11 = num11Int * 3;
     calc12 = num12Int * 2;
 
-    const somandoDigitos01 =
+const somandoDigitos01 =
       calc1 +
       calc2 +
       calc3 +
@@ -97,6 +97,7 @@ function verificaCnpj() {
 
     console.log("Divisão: " + divisao01);
     console.log("Resto da divisão:" + divisaoResto);
+    const primeiroDigitoVerificador = 11 - divisaoResto;
 
     //_____________________________Segundo digito Verificador______________________________________
 
@@ -136,6 +137,7 @@ function verificaCnpj() {
 
     console.log("Divisão2: " + divisao02);
     console.log("Resto da divisão2:" + divisaoResto02);
+    const segundoDigitoVerificador = 11 - divisaoResto02;
 
     if (divisaoResto == 0 || divisaoResto == 1) {
       console.log("1º Digito verificador Válido =0");
@@ -148,14 +150,14 @@ function verificaCnpj() {
       }
     }
 
-    if (divisaoResto <= 10 && divisaoResto >= 2) {
-      const primeiroDigitoVerificador = 11 - divisaoResto;
+    if (divisaoResto <= 10 && divisaoResto >= 2 && primeiroDigitoVerificador==num13Int) {
+      
       console.log(
         " O Primeiro digito verificador é: " + primeiroDigitoVerificador
       );
 
-      if (divisaoResto02 <= 10 && divisaoResto02 >= 2) {
-        const segundoDigitoVerificador = 11 - divisaoResto02;
+      if (divisaoResto02 <= 10 && divisaoResto02 >= 2 && segundoDigitoVerificador==num14Int) {
+       
         console.log(
           " O segundo digito verificador é: " + segundoDigitoVerificador
         );
