@@ -1,0 +1,16 @@
+{
+  "name": "cnpj_verificador",
+  "version": "1.0.0",
+  "description": "Cnj_Verificador",
+  "main": "ValidacaoCnpj.js",
+  "scripts": {
+    "start": "nodemon ./ValidacaoCnpj.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Gustavo Souza",
+  "license": "ISC",
+  "dependencies": {
+    "node": "^17.7.2",
+    "nodemon": "^2.0.16"
+  }
+}
