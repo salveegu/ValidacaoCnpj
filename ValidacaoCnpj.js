@@ -1,4 +1,6 @@
 
+var express =require ('express');
+var app = express();
 
 function verificaCnpj() {
   const campoCnpj = document.getElementById("numeroCnpj").value;
