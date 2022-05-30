@@ -9,7 +9,7 @@ function verificaCnpj() {
   const tamanhoCnpjFormatado = cnpjFormatado.toString().length;
 
   if (cnpjFormatado == "null" || cnpjFormatado == "") {
-    alert("CNPj inválido" + cnpjFormatado + " digitos" + tamanhoCnpjFormatado);
+   return alert("CNPj inválido: Campo vazio!" + cnpjFormatado)
   }
 
   if (
