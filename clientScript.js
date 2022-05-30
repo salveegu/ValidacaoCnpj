@@ -65,7 +65,7 @@ if (tamanhoCnpjFormatado == 14) {
   //________________________________________Segundo Digito Verificador________________________________
 
 
-  calc1 = num1Int * 6;
+      calc1 = num1Int * 6;
       calc2 = num2Int * 5;
       calc3 = num3Int * 4;
       calc4 = num4Int * 3;
@@ -133,5 +133,4 @@ if (tamanhoCnpjFormatado == 14) {
     } else {
      return ZDK.Client.showAlert("CNPJ Inválido" + cnpjFormatado + " digitos" + tamanhoCnpjFormatado);
   }
-
 
